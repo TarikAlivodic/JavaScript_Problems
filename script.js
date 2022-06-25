@@ -31,7 +31,58 @@
 
 
 
-// What is the greatest product of four adjacent numbers in the same direction in the 20×20 grid?
+// 3. Find the largest palindrome made from the product of two 3-digit numbers.
+
+
+// isPalindrome = (num) => {
+//     let reverse = String(num).split("").reverse("").join("");
+//     return Number(reverse) === num;
+// }
+
+// largestPalindrome = (n) => {
+//     let highest = 0
+//     let largestNumber = "9"
+
+//     largestNumber += Number(largestNumber.repeat(n-1))
+//     largestNumber = Number(largestNumber)
+    
+//     for(let i = largestNumber; i > 0; i--){
+//         for(let j = largestNumber; j > 0; j--){
+//             product = i * j;
+//             if(isPalindrome(product)){
+//                 if(product > highest) highest = product
+//                 break;
+//             }
+//         }
+//     }
+//     return highest;
+// }
+// console.log(largestPalindrome(3));
+
+
+
+// 4. Find the sum of all the primes below two million.
+
+
+// number = 2000000;
+// sum = 0;
+
+// for(i = 1; i < number; i++){
+//     num = 0;
+//     for(j = 2; j < i; j++){
+//         if(i % j == 0){
+//             num = 1;
+//             break;
+//         }
+//     }
+//     if(i > 1 && num == 0){
+//         sum += i;
+//     }
+// }
+// console.log(sum);
+
+
+// 5. What is the greatest product of four adjacent numbers in the same direction in the 20×20 grid?
 
 
 // numbers =
